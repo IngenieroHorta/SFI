@@ -1,1 +1,267 @@
-<h1>Hola por aqui </h1>
+
+    <body>
+        <section class="container rounded p-6">
+            <img src="assets/img/prerent.png" class="img-fluid">
+        </section>
+        <div class="container text-white text-center " id="nuevo">
+            <hr width=100% size=5>
+            <h1>Aplicar Estudio</h1>
+            <hr width=100% size=5>
+            <div class="notacondition">
+                <center>
+                    <p>Completa este corto formulario, obtén tu preaprobación Rent10 y aplica a tantas propiedades en renta como necesites con una sola aplicación. Tiempo estimado para completar: 4 minutos</p>
+                </center>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container overflow-hidden" style="flex-wrap:wrap;   min-width: 300px;">
+            <div class="row">
+                <label for="floatingInput">¿Dónde te gustaría vivir? (Ciudad, colonia o barrio)</label>
+                <div class="form-floating mb-3 ">
+                    <input type="text" name="Donde_vivir" value="" class="form-control" id="Donde_vivir" required>
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput">¿Cuál es tu presupuesto para la renta mensual en $MXN (incluidos los gastos de mantenimiento) Ej. $10.000 MXN</label>
+                <div class="form-floating mb-3">
+                    <input type="text" name="Presupues_mens" value="" id="Presupues_mens" class="form-control" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="">¿Ya has decidido qué inmueble rentar?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Decidido_inm" id="Decidido_inm" value="Si" >
+                    <label class="form-check-label" for="flexRadioDefault1">Sí</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Decidido_inm" id="Decidido_inm" value="No">
+                    <label class="form-check-label" for="flexRadioDefault2">No</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="floatingInput">Nombre completo</label>
+                <div class="form-floating mb-3">
+                    <input id="nombre_completo" type="text" name="nombre_completo" id="nombre_completo" value="" class="form-control" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="floatingInput">Correo electrónico de contacto</label>
+                <div class="form-floating mb-3">
+                    <input type="email" name="correo" value="" id="correo" class="form-control" required>
+
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput">Número de celular</label>
+                <div class="form-floating mb-3">
+                    <input type="phone" name="celular" id="celular" value="" class="form-control" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="floatingInput">Rfc</label>
+                <div class="form-floating mb-3">
+                    <input type="text" name="rfc" id="rfc" value="" class="form-control" required>
+
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput">Fecha de nacimiento</label>
+                <div class="form-floating mb-3">
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" value="" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="row border-spacing">
+                <label for="floatingInput">Genero</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="genero" value="Masculino" >
+                    <label class="form-check-label" for="flexRadioDefault2">Masculino</label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="genero" value="Femenino" >
+                    <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="genero" value="Prefiero no decirlo" >
+                    <label class="form-check-label" for="flexRadioDefault2">Prefiero no decirlo</label>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-floating mb-3">
+                    <select class="form-control" aria-label=".form-control-lg example" name="estado_civil" id="estado_civil" required>
+                        <option>Estado civil</option>
+                        <option value="Soltero/a">Soltero/a</option>
+                        <option value="Casado/a">Casado/a</option>
+                        <option value="Union libre">Union libre"</option>
+                        <option value="Divorciado/a">Divorciado/a</option>
+                        <option value="Viudo/a">Viudo/a</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-floating mb-3">
+                    
+                    <select class="form-control" aria-label=".form-control-lg example" name="escolaridad" required>
+                        <option>Grado de escolaridad</option>
+                        <option value="Ninguno" >Ninguno</option>
+                        <option value="Primaria" >Primaria</option>
+                        <option value="Secundaria" >Secundaria</option>
+                        <option value="Preparatoria">Preparatoria</option>
+                        <option value="Tecnico">Tecnico</option>
+                        <option value="Licenciatura" >Licenciatura</option>
+                        <option value="Maestria" >Maestria</option>
+                        <option value="Doctorado">Doctorado</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput"># de personas que dependen económicamente de ti (si no tienes, pon 0)</label>
+                <div class="form-floating mb-3">
+                    <input type="text" name="n_personas" id="n_personas" value="" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-floating mb-3">
+                
+                    <select class="form-control" aria-label=".form-control-lg example" name="situacion_lab" required>
+                        <option>Situación laboral</option>
+                        <option value="Empleado/Asalariado" >Empleado/Asalariado</option>
+                        <option value="Propietario/Socio" >Propietario/Socio</option>
+                        <option value="Independiente" >Independiente</option>
+                        <option value="Jubilado/Pensionado" >Jubilado/Pensionado</option>
+                        <option value="Inversionistas/Rentistas">Inversionistas/Rentistas</option>
+                        <option value="Amo/a de casa" >Amo/a de casa</option>
+                        <option value="Estudiante" >Estudiante</option>
+                        <option value="Buscando empleo" >Buscando empleo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput">Nombre de la empresa en que trabajas</label>
+                <div class="form-floating mb-3">
+                    <input type="text" name="nomb_empre" id="nomb_empre" value="" class="form-control" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="form-floating mb-3">
+                    
+                    <select class="form-control" aria-label=".form-control-lg example" name="antiguedad_empre" required>
+                        <option>Antiguedad en la empresa</option>
+                        <option value="Menor a 1 año">Menor a 1 año</option>
+                        <option value="1-3 anos" >1-3 años</option>
+                        <option value="3-5 anos" >3-5 años</option>
+                        <option value="5-10 anos" >5-10 años</option>
+                        <option value="Mayor a 10 anos" >Mayor a 10 años</option>
+                        <option value="no_aplica" >No aplica</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="form-floating mb-3">
+                    
+                    <select class="form-control" aria-label=".form-control-lg example" name="cargo_empresa" id="cargo_empresa" required>
+                        <option>Descripción de tu cargo (si aplica)</option>
+                        <option value="Becario/Auxiliar/Analista" >Becario/Auxiliar/Analista</option>
+                        <option value="Supervisor/Gerente">Supervisor/Gerente</option>
+                        <option value="Sub-director" >Sub-director</option>
+                        <option value="Director" >Director</option>
+                        <option value="Visepresidente">Visepresidente</option>
+                        <option value="Presidente" >Presidente</option>
+                        <option value="Fundador/Cofundador" >Fundador/Cofundador</option>
+                        <option value="Ejecutivo" >Ejecutivo</option>
+                        <option value="Freelancer/Independiente" >Freelancer/Independiente</option>
+                        <option value="Administrador general">Administrador general</option>
+                        <option value="Jubilado" >Jubilado</option>
+                        <option value="Ejecutivo" >Ejecutivo</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                
+                <div class="form-floating mb-3 ">
+                    
+                    <select class="form-control" aria-label=".form-control-lg example" name="fuente_ingreso" id="fuente_ingreso" required>
+                        <option>Fuente de ingresos principal</option>
+                        <option value="Sueldo de nomina" >Sueldo de nómina</option>
+                        <option value="Honorarios/Comisiones" >Honorarios/Comisiones</option>
+                        <option value="Dividendos/Empresario" >Dividendos/Empresario</option>
+                        <option value="Pensión" >Pensión</option>
+                        <option value="Otro" >Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput">Ingresos mensuales actividad económica principal (En $MXN)</label>
+                <div class="form-floating mb-3">
+                    <input type="number" name="ing_men_principal" id="ing_men_principal" value="" class="form-control" id="ing_men_principal" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="floatingInput">Otros ingresos mensuales (En $MXN, si no tienes, pon $0)</label>
+                <div class="form-floating mb-3">
+                    <input type="number" name="otros_ingresos" value="" class="form-control" id="otros_ingresos" required>
+
+                </div>
+            </div>
+            <div class="row">
+                <label for="floatingInput">Gastos/egresos mensuales (En $MXN)</label>
+                <div class="form-floating mb-3">
+                    <input type="number" name="gastos_mensual" value="" class="form-control" id="gastos_mensual" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="floatingInput">Observaciones (puedes ingresar información que consideres importante para tu solicitud de renta)</label>
+                <div class="form-floating mb-3">
+                    <input type="text"  name="observacion" id="observacion" value="" class="form-control" required>
+                </div>
+<br>
+                <div class="form-floating mb-3 diadehoy">
+                    <input type="date" class="form-control" name="created_at" id="created_at" value="<?php echo date('Y-m-d'); ?>">
+                </div>
+            </div>
+<br>
+            <div class="notaend">
+                <p>Todos los datos de este formulario son privados. No te preocupes, toda la información brindada será de uso confidencial y únicamente se analizarán los resultados consolidados.</p>
+            </div>
+            
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary btn-outline" type="button" value="Aplicar Estudio" style="margin-bottom: 10px;">Aplicar Estudio</button>
+              </div>
+            <!-- <div class="btnnuevo">
+                <input type="submit" style="margin-bottom: 10px;" value="Aplicar Estudio" class="btn btn-success btn-outline ">
+                <br>
+            </div> -->
+        </div>
+        <!--   
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/sweetAlert.js"></script>-->
+
+
+    </body>
